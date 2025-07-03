@@ -1,0 +1,483 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.ads {
+    padding: 0;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.nav {
+    background-color: #ff8c88;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+}
+
+.logo {
+    margin-left: 50px; 
+}
+
+.menu ul {
+    list-style-type: none;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    color: #ff403a;
+}
+
+.search-product {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.search-product input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+
+.search-product button {
+    padding: 8px 14px;
+    background-color: #ff8c88;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+
+.search-product button:hover {
+    background-color: #b92f2a;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #ff8c88;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff8c88;
+    font-family: 'Playfair Display', serif;
+    min-width: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.manual-btn {
+    border: 2px solid #ff8c88;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background-color: transparent;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background: #ff8c88;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+  
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+  
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+  
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+  
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+    z-index: 3;
+}
+
+.navigation-auto div {
+    border: 2px solid #ff8c88;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    background-color: transparent;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #ff8c88;
+}
+  
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #ff8c88;
+}
+  
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #ff8c88;
+}
+  
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #ff8c88;
+}
+
+.desc {
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+}
+
+.desc p {
+    font-size: 20px;
+    color: #282828;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 8ch;
+    margin-right: 8ch;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    column-gap: 20px;
+}
+
+.aboutus img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.colom {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    width: 80%;
+    text-align: center;
+}
+
+.deskripsi {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.kolom {
+    color: #ffffff;
+    flex: 1;
+    padding: 20px;
+    border: none;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kolom:not(:last-child) {
+    margin-right: 0;
+    border-right: 1px solid #ccc;
+}
+
+.icon-footer {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+.item a:hover {
+    color: #ff403a;
+    font-weight: bold;
+}
+
+.kudapan-footer center img {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.kudapan-footer center p {
+    color: #ffffff;
+}
+
+.setfooter {
+    background-color: #ff8c88;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 80px;
+    margin-top: 15px;
+    margin-right: 25px;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.menuimg {
+    object-fit: cover;
+}
+
+.grid > article {
+    box-shadow: 10px 5px 5px 0px #000000;
+    border-radius: 30px;
+    text-align: center;
+    background: #ff8c88;
+    width: 300px;
+    transition: transform;
+}
+
+.grid > article a img {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.grid > article :hover{
+    cursor: pointer;
+}
+
+.content {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.grid > article:hover{
+    transform: scale(1.05);
+}
+
+/* PRODUCT PAGE */
+.product-content {
+    width: 100%;
+}
+
+.product-search {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 108px;
+}
+
+.content-section h1 {
+    margin-left: 20px;
+}
+
+.productbox {
+    width: 85%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+}
+
+.cards {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.image-product {
+    width: 200px;
+    height: 225px;
+    background-color: #ff403a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contentt {
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.contentt h2 {
+    letter-spacing: 1.5px;
+}
+
+.contentt h3 {
+    margin-top: 5px;
+}
+
+.contentt p { 
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+.btn-primary {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ff8c88;
+    cursor: pointer;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #b92f2a;
+    transition: 1s ease;
+}
+
+.form-control {
+    width: 70px;
+}
+
+@media (max-width:320px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .kolom {
+        margin: 0;
+        border-right: none;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
